@@ -6,29 +6,19 @@
         <link rel="stylesheet" type="text/css" href="estilo.css">
     </head>
     <body id = "home">
-        <div class="container">
-           <form class="tela-cadastro">
-                <div class="titulo">
-                   <h1>Sing in</h1>
-                </div>
-
-                <div class="login">
-
-                    <label class="email">Email</label>
-                    <input type="text" class="email" name="email" id="email" placeholder="Enter your e-mail adress">
-                </div>  
-
-                <div>
-
-                    <label class="senha">Password</label>
-                    <input type="password" class= "senha" name="senha" id="senha" placeholder="Enter your password adress">
-                    <a href="">Forgetten password</a>
-                </div>
-                    
-            </form>
-            <div class="imagem">
-                <img src="imagens/frente.png">
-            </div>
+        <div>
+            <h1>Bem vindo!</h1>
+            <input type="text" id="inputEmail" placeholder="Digite seu e-mail" maxlength="40">
+            <input type="password" name="" id="inputSenha" placeholder="Digite sua senha" maxlength="38">
+            <button id="btnLogin">Entrar</button>
+            <a href="#">Esqueceu a senha?</a>
+            <a href="#">Cadastra-se</a>
         </div>
+
+        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+        <!--<script src="https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js"></script>-->
+        <script src="authentication.js"></script>
+        <script src="app.js"></script>
+
     </body>
 </html>
